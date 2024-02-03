@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetailAnnoucement">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:onClick="back"
+        />
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="اسم المنتج"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:id="@+id/price"
+            android:textSize="24dp"
+            android:textColor="#3A4889"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="السعر" />
+        <TextView
+            android:layout_margin="16dp"
+            android:textSize="18dp"
+            android:textColor="#3A4889"
+            android:id="@+id/Dis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الوصف" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+            <Button
+                android:layout_width="207dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="التواصل مع البائع"
+                app:backgroundTint="#5063BF"
+                android:textSize="25sp"
+                android:layout_margin="20dp"
+                android:layout_gravity="right"
+                android:textStyle="bold"
+                android:id="@+id/contact"
+                android:onClick="contact"
+                />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="شراء"
+                app:backgroundTint="@color/black"
+                android:textSize="25sp"
+                android:layout_margin="20dp"
+                android:layout_gravity="right"
+                android:textStyle="bold"
+                android:id="@+id/buy" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

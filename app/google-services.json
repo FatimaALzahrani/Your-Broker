@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1004261960328",
+    "project_id": "your-broker-2b8a1",
+    "storage_bucket": "your-broker-2b8a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004261960328:android:70400edfd09484d1cc4d3d",
+        "android_client_info": {
+          "package_name": "com.market.your_broker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4rgCCfuKTCrmT2UIo5-nmXYbKnq_gwK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
